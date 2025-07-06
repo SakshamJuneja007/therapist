@@ -1,0 +1,40 @@
+.email-link {
+  font-family: 'freight-sans-pro', sans-serif;
+  font-size: 19.2px;
+  font-weight: lighter;
+  line-height: 34.56px;
+  text-decoration: underline;
+  color: #41413f;
+  margin-top: 5px;
+}
+a {
+    text-decoration: underline;
+      color: #41413f;
+
+}
+.custom-headings {
+    margin-top: 40px;
+  font-family:  outwitt;
+  font-weight: 50;
+  line-height: 58.2042px;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px; /* Tailwind's gap-6 = 1.5rem = 24px */
+  margin-bottom: 3rem; /* Tailwind's mb-12 = 3rem */
+  font-size: 19.2px;
+  font-family: 'FreightSansPro', sans-serif; /* Assuming this is your font */
+}
+.footer-links a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  display: inline-block;
+  margin-top: 20px;
+        color: #41413f;
+
+}
+
