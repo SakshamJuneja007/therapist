@@ -1,0 +1,89 @@
+.about-container {
+    margin-bottom: 210px;
+
+  margin-top: 10%;
+  display: flex;
+  padding: 0 60px;
+  gap: 40px;
+  align-items: flex-start;
+  background-color: rgb(255, 255, 255);
+}
+
+.about-text {
+  margin-left: 180px;
+  width: 50%;
+  color: #7e7e6b;
+  font-size: 17.2px;
+  font-weight: 300;
+  line-height: 34.56px;
+}
+
+.about-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image {
+    margin-top: 30px;
+  }
+}
+
+/* Optional: Load your FreightDispProBlack font */
+@font-face {
+  font-family: 'FreightDispProBlack';
+  src: url('/fonts/FreightDispProBlack-Regular.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-freight {
+  font-family: 'FreightDispProBlack', serif;
+}
+hr { 
+            height: 1.3px; 
+            background-color: black; 
+            width: 95%;
+            border: none; 
+        } @media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-text,
+  .about-image {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Reorder elements */
+  .about-text {
+    order: 3;
+  }
+
+  .about-image {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .about-heading {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+.chevron-icon-circle {
+  display: inline-block;
+  background-color: #e6edf5;
+  color: #4d5d7a;
+  border-radius: 50%;
+  padding: 4px 12px;
+  font-size: 32px;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.chevron-icon-circle.rotate {
+  transform: rotate(90deg);
+}
+
+.answer-box {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.answer-box.open {
+  max-height: 500px;
+  opacity: 1;
+}

@@ -1,0 +1,119 @@
+
+.container {
+  margin-top: 80px;         /* Adds space above the section */
+  padding-top: 80px;        /* Internal top spacing */
+  padding-bottom: 96px;     /* Internal bottom spacing */
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+  background-color: #f3f0e8;
+}
+.focus-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile default: 1 column */
+}
+
+/* Small devices and up: 3 columns */
+@media (min-width: 640px) {
+  .focus-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* Optional responsive control */
+@media (min-width: 768px) {
+  .container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+.custom-heading {
+    margin-top: 20px;
+  font-family:  outwitt;
+  font-weight: 50;
+  line-height: 58.2042px;
+}
+ .paragraph{
+margin:
+16px 0px;
+font-family: outwitt;
+line-height: 36px;
+font-weight: lighter;
+}
+.h{
+   margin-top: 50px;         /* Adds space above the section */
+  padding-top: 50px;        /* Internal top spacing */
+}
+/* Container for all cards */
+
+/* Responsive for medium screens and above */
+@media (min-width: 768px) {
+  .focus-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Each card */
+.focus-card {
+  padding: 0;
+}
+
+/* Circular Image */
+.focus-image {
+  width: 14rem;
+  height: 14rem;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Card title */
+.focus-title {
+  font-size: 1.25rem;
+  color: #3b3a36;
+  margin-bottom: 1rem;
+  font-family: 'FreightDispProBlack', serif;
+}
+
+/* Description text */
+.focus-desc {
+  font-size: 1rem;
+line-height: 1.625rem;
+  color: #4b4a47;
+  font-weight: 300;
+  padding: 0 1rem;
+}.card-heading {
+  font-family: 'FreightDispProBlack', serif;
+  font-size: 25px;
+  color: #3b3a36;
+  font-weight: 300;
+  line-height: 33px;
+  margin-top: 25px;
+}
+
+.card-paragraph {
+  font-size: 17px;
+  color: #4b4a47;
+  line-height: 28.8px;
+  font-weight: 100;
+  padding: 0 8px;
+
+}
+
+.circle-image {
+  width: 23rem;
+  height: 23rem;
+  margin: 0 auto;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.sub{
+    margin-top: 10%;
+    margin-bottom: 7%;
+      font-family:  outwitt;
+  font-weight: lighter;
+  line-height: 58.2042px;
+    font-size: 42px;
+}

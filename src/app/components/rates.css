@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'FreightDispProBlack';
+  src: url('/fonts/FreightDispProBlack-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.rates-section {
+  background-color: #9cc1c2;
+  text-align: center;
+  padding: 70px 24px;
+  color: #1a1a1a;
+}
+
+.rates-heading {
+  font-size: 38px;
+  font-weight: 400;
+  font-family: 'FreightDispProBlack', serif;
+}
+
+.rates-content {
+  max-width: 768px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.rates-content a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.rates-content a:hover {
+  color: black;
+}

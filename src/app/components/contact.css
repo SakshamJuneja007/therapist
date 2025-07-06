@@ -1,0 +1,44 @@
+/* public/contact.css */
+.contact-card {
+  border: 1px solid #204020;
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: #f9f9f6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+}
+
+.contact-title {
+  font-family: 'Georgia', serif;
+  color: #204020;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.contact-subtitle {
+  color: #444;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-input,
+.contact-textarea,
+.contact-select {
+  border: 1px solid #204020;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: #fff;
+  width: 100%;
+}
+
+.contact-button {
+  background-color: #204020;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #183518;
+}
