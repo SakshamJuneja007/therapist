@@ -1,40 +1,119 @@
-.email-link {
-  font-family: 'freight-sans-pro', sans-serif;
-  font-size: 19.2px;
-  font-weight: lighter;
-  line-height: 34.56px;
-  text-decoration: underline;
-  color: #41413f;
-  margin-top: 5px;
-}
-a {
-    text-decoration: underline;
-      color: #41413f;
 
+.container {
+  margin-top: 80px;         /* Adds space above the section */
+  padding-top: 80px;        /* Internal top spacing */
+  padding-bottom: 96px;     /* Internal bottom spacing */
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+  background-color: #f3f0e8;
 }
-.custom-headings {
-    margin-top: 40px;
+.focus-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile default: 1 column */
+}
+
+/* Small devices and up: 3 columns */
+@media (min-width: 640px) {
+  .focus-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* Optional responsive control */
+@media (min-width: 768px) {
+  .container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+.custom-heading {
+    margin-top: 20px;
   font-family:  outwitt;
   font-weight: 50;
   line-height: 58.2042px;
 }
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 24px; /* Tailwind's gap-6 = 1.5rem = 24px */
-  margin-bottom: 3rem; /* Tailwind's mb-12 = 3rem */
-  font-size: 19.2px;
-  font-family: 'FreightSansPro', sans-serif; /* Assuming this is your font */
+ .paragraph{
+margin:
+16px 0px;
+font-family: outwitt;
+line-height: 36px;
+font-weight: lighter;
 }
-.footer-links a {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-  display: inline-block;
-  margin-top: 20px;
-        color: #41413f;
+.h{
+   margin-top: 50px;         /* Adds space above the section */
+  padding-top: 50px;        /* Internal top spacing */
+}
+/* Container for all cards */
+
+/* Responsive for medium screens and above */
+@media (min-width: 768px) {
+  .focus-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Each card */
+.focus-card {
+  padding: 0;
+}
+
+/* Circular Image */
+.focus-image {
+  width: 14rem;
+  height: 14rem;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Card title */
+.focus-title {
+  font-size: 1.25rem;
+  color: #3b3a36;
+  margin-bottom: 1rem;
+  font-family: 'FreightDispProBlack', serif;
+}
+
+/* Description text */
+.focus-desc {
+  font-size: 1rem;
+line-height: 1.625rem;
+  color: #4b4a47;
+  font-weight: 300;
+  padding: 0 1rem;
+}.card-heading {
+  font-family: 'FreightDispProBlack', serif;
+  font-size: 25px;
+  color: #3b3a36;
+  font-weight: 300;
+  line-height: 33px;
+  margin-top: 25px;
+}
+
+.card-paragraph {
+  font-size: 17px;
+  color: #4b4a47;
+  line-height: 28.8px;
+  font-weight: 100;
+  padding: 0 8px;
 
 }
 
+.circle-image {
+  width: 23rem;
+  height: 23rem;
+  margin: 0 auto;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.sub{
+    margin-top: 10%;
+    margin-bottom: 7%;
+      font-family:  outwitt;
+  font-weight: lighter;
+  line-height: 58.2042px;
+    font-size: 42px;
+}
