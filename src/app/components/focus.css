@@ -1,94 +1,40 @@
-'use client';
-import Image from 'next/image';
-import './focus.css';
-
-export default function TherapySection() {
-  return (
-    <section className="bg-[#f3f0e8] px-6 py-24 text-center container">
-      {/* Heading */}
-      <h2 className="text-[36px] md:text-[42px] text-[#41413f] mb-8 mt-10 custom-heading">
-        Therapy can be a space where you invest in yourself—<br />
-        one of the highest forms of self-care.
-      </h2>
-
-      {/* Paragraph */}
-      <p className="text-[20px] leading-[-2px] text-[#4b4a47] max-w-4xl mx-auto mb-14 font-light paragraph">
-        <br />
-        <br />
-        You may be led to therapy by anxiety, depression, relationship stress, past or recent trauma, grief and loss,
-        self-esteem issues,
-        <br /> or challenges with family, parenting, or parental relationships. Whatever the source of
-        your stress, you don&apos;t have to face it <br /> alone. Therapy offers you the time and space to work toward wellness
-        and peace.
-      </p>
-
-      {/* Horizontal Divider */}
-      <div className="w-[90%] h-[1px] bg-black mx-auto mb-14 "></div>
-
-      <div className="w-[95%] mx-auto mt-10 mb-[100px]">
-        <hr className="border-t-2 border-[#383838]" />
-      </div>
-
-      {/* Subheading */}
-      <h3 className="text-[36px] md:text-[52px] text-[#41413f] mb-8 mt-10 sub">
-        Areas of Focus
-      </h3>
-      <div className="focus-grid">
-        {/* Card 1 */}
-        <div className="text-center">
-          <div className="circle-image mb-6">
-            <Image
-              src="/1.jpg"
-              alt="Healthcare Providers"
-              width={300}
-              height={300}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <h4 className="card-heading mb-4">Therapy for Healthcare Providers and Students</h4>
-          <p className="card-paragraph leading-[20px]">
-            <br />
-            The care you provide for others may be driving you to seek <br /> therapy, whether due to burnout, compassion fatigue,
-            <br /> imposter syndrome, people-pleasing tendencies, or <br />perfectionism. Whether you&apos;re in pre-professional school,
-            <br /> undergoing training, or reflecting on a long career in <br /> healthcare, we can address the unique stressors of your <br />professional environment along with any challenges you <br />may be facing in other areas of your life.
-          </p>
-        </div>
-
-        {/* Card 2 */}
-        <div className="text-center">
-          <div className="circle-image mb-6">
-            <Image
-              src="/2.jpg"
-              alt="Trauma and Grief"
-              width={300}
-              height={300}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <h4 className="card-heading mb-4">Therapy for Trauma and Grief</h4>
-          <p className="card-paragraph">
-            <br /> Life&apos;s challenges, whether a difficult childhood, a traumatic <br /> event or series of events, or the loss of someone or <br />something deeply meaningful, can lead to profound <br />experiences of trauma and grief. Therapy offers a supportive <br />space to process these experiences, care for yourself amidst <br />painful thoughts and emotions, and work toward a sense of
-            grounding and meaning.
-          </p>
-        </div>
-
-        {/* Card 3 */}
-        <div className="text-center">
-          <div className="circle-image mb-6">
-            <Image
-              src="/3.jpg"
-              alt="Immigrant Individuals"
-              width={300}
-              height={300}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <h4 className="card-heading mb-4">Therapy for Immigrant Individuals</h4>
-          <p className="card-paragraph">
-            <br /> Second-generation individuals in immigrant families, born in <br /> the U.S. to at least one parent born abroad, often navigate <br />the complexities of multiple cultures and diverse <br />expectations. This experience can bring challenges such as <br />feeling like a foreigner in your own country and navigating <br />strained family relationships. Therapy offers a supportive <br /> space to explore and process this unique aspect of your <br />identity.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
+.email-link {
+  font-family: 'freight-sans-pro', sans-serif;
+  font-size: 19.2px;
+  font-weight: lighter;
+  line-height: 34.56px;
+  text-decoration: underline;
+  color: #41413f;
+  margin-top: 5px;
 }
+a {
+    text-decoration: underline;
+      color: #41413f;
+
+}
+.custom-headings {
+    margin-top: 40px;
+  font-family:  outwitt;
+  font-weight: 50;
+  line-height: 58.2042px;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px; /* Tailwind's gap-6 = 1.5rem = 24px */
+  margin-bottom: 3rem; /* Tailwind's mb-12 = 3rem */
+  font-size: 19.2px;
+  font-family: 'FreightSansPro', sans-serif; /* Assuming this is your font */
+}
+.footer-links a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  display: inline-block;
+  margin-top: 20px;
+        color: #41413f;
+
+}
+
