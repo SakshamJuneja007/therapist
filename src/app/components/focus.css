@@ -1,119 +1,94 @@
+'use client';
+import Image from 'next/image';
+import './focus.css';
 
-.container {
-  margin-top: 80px;         /* Adds space above the section */
-  padding-top: 80px;        /* Internal top spacing */
-  padding-bottom: 96px;     /* Internal bottom spacing */
-  padding-left: 24px;
-  padding-right: 24px;
-  text-align: center;
-  background-color: #f3f0e8;
-}
-.focus-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* Mobile default: 1 column */
-}
+export default function TherapySection() {
+  return (
+    <section className="bg-[#f3f0e8] px-6 py-24 text-center container">
+      {/* Heading */}
+      <h2 className="text-[36px] md:text-[42px] text-[#41413f] mb-8 mt-10 custom-heading">
+        Therapy can be a space where you invest in yourself—<br />
+        one of the highest forms of self-care.
+      </h2>
 
-/* Small devices and up: 3 columns */
-@media (min-width: 640px) {
-  .focus-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+      {/* Paragraph */}
+      <p className="text-[20px] leading-[-2px] text-[#4b4a47] max-w-4xl mx-auto mb-14 font-light paragraph">
+        <br />
+        <br />
+        You may be led to therapy by anxiety, depression, relationship stress, past or recent trauma, grief and loss,
+        self-esteem issues,
+        <br /> or challenges with family, parenting, or parental relationships. Whatever the source of
+        your stress, you don&apos;t have to face it <br /> alone. Therapy offers you the time and space to work toward wellness
+        and peace.
+      </p>
 
+      {/* Horizontal Divider */}
+      <div className="w-[90%] h-[1px] bg-black mx-auto mb-14 "></div>
 
-/* Optional responsive control */
-@media (min-width: 768px) {
-  .container {
-    padding-left: 48px;
-    padding-right: 48px;
-  }
-}
+      <div className="w-[95%] mx-auto mt-10 mb-[100px]">
+        <hr className="border-t-2 border-[#383838]" />
+      </div>
 
-.custom-heading {
-    margin-top: 20px;
-  font-family:  outwitt;
-  font-weight: 50;
-  line-height: 58.2042px;
-}
- .paragraph{
-margin:
-16px 0px;
-font-family: outwitt;
-line-height: 36px;
-font-weight: lighter;
-}
-.h{
-   margin-top: 50px;         /* Adds space above the section */
-  padding-top: 50px;        /* Internal top spacing */
-}
-/* Container for all cards */
+      {/* Subheading */}
+      <h3 className="text-[36px] md:text-[52px] text-[#41413f] mb-8 mt-10 sub">
+        Areas of Focus
+      </h3>
+      <div className="focus-grid">
+        {/* Card 1 */}
+        <div className="text-center">
+          <div className="circle-image mb-6">
+            <Image
+              src="/1.jpg"
+              alt="Healthcare Providers"
+              width={300}
+              height={300}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <h4 className="card-heading mb-4">Therapy for Healthcare Providers and Students</h4>
+          <p className="card-paragraph leading-[20px]">
+            <br />
+            The care you provide for others may be driving you to seek <br /> therapy, whether due to burnout, compassion fatigue,
+            <br /> imposter syndrome, people-pleasing tendencies, or <br />perfectionism. Whether you&apos;re in pre-professional school,
+            <br /> undergoing training, or reflecting on a long career in <br /> healthcare, we can address the unique stressors of your <br />professional environment along with any challenges you <br />may be facing in other areas of your life.
+          </p>
+        </div>
 
-/* Responsive for medium screens and above */
-@media (min-width: 768px) {
-  .focus-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+        {/* Card 2 */}
+        <div className="text-center">
+          <div className="circle-image mb-6">
+            <Image
+              src="/2.jpg"
+              alt="Trauma and Grief"
+              width={300}
+              height={300}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <h4 className="card-heading mb-4">Therapy for Trauma and Grief</h4>
+          <p className="card-paragraph">
+            <br /> Life&apos;s challenges, whether a difficult childhood, a traumatic <br /> event or series of events, or the loss of someone or <br />something deeply meaningful, can lead to profound <br />experiences of trauma and grief. Therapy offers a supportive <br />space to process these experiences, care for yourself amidst <br />painful thoughts and emotions, and work toward a sense of
+            grounding and meaning.
+          </p>
+        </div>
 
-/* Each card */
-.focus-card {
-  padding: 0;
-}
-
-/* Circular Image */
-.focus-image {
-  width: 14rem;
-  height: 14rem;
-  margin: 0 auto 1.5rem;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-/* Card title */
-.focus-title {
-  font-size: 1.25rem;
-  color: #3b3a36;
-  margin-bottom: 1rem;
-  font-family: 'FreightDispProBlack', serif;
-}
-
-/* Description text */
-.focus-desc {
-  font-size: 1rem;
-line-height: 1.625rem;
-  color: #4b4a47;
-  font-weight: 300;
-  padding: 0 1rem;
-}.card-heading {
-  font-family: 'FreightDispProBlack', serif;
-  font-size: 25px;
-  color: #3b3a36;
-  font-weight: 300;
-  line-height: 33px;
-  margin-top: 25px;
-}
-
-.card-paragraph {
-  font-size: 17px;
-  color: #4b4a47;
-  line-height: 28.8px;
-  font-weight: 100;
-  padding: 0 8px;
-
-}
-
-.circle-image {
-  width: 23rem;
-  height: 23rem;
-  margin: 0 auto;
-  border-radius: 9999px;
-  overflow: hidden;
-}
-.sub{
-    margin-top: 10%;
-    margin-bottom: 7%;
-      font-family:  outwitt;
-  font-weight: lighter;
-  line-height: 58.2042px;
-    font-size: 42px;
+        {/* Card 3 */}
+        <div className="text-center">
+          <div className="circle-image mb-6">
+            <Image
+              src="/3.jpg"
+              alt="Immigrant Individuals"
+              width={300}
+              height={300}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <h4 className="card-heading mb-4">Therapy for Immigrant Individuals</h4>
+          <p className="card-paragraph">
+            <br /> Second-generation individuals in immigrant families, born in <br /> the U.S. to at least one parent born abroad, often navigate <br />the complexities of multiple cultures and diverse <br />expectations. This experience can bring challenges such as <br />feeling like a foreigner in your own country and navigating <br />strained family relationships. Therapy offers a supportive <br /> space to explore and process this unique aspect of your <br />identity.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }
