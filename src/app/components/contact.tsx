@@ -1,7 +1,7 @@
 'use client';
 import Head from 'next/head';
+import Image from 'next/image'; // We will use Image now
 import './contact.css';
-import Image from 'next/image';
 
 export default function Contact() {
   return (
@@ -10,7 +10,7 @@ export default function Contact() {
         <title>Contact | Dr. Norman</title>
       </Head>
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-        <div className="w-full max-w-2xl s">
+        <div className="w-full max-w-2xl">
           <form className="contact-card">
             <h2 className="contact-title text-center text-xl sm:text-2xl md:text-3xl">
               Get In Touch
@@ -52,7 +52,7 @@ export default function Contact() {
                 className="contact-input"
               />
               <small className="text-sm text-gray-500">
-                Let us know when you&#39;re typically available for a call or consultation
+                Let us know when you&apos;re typically available for a call or consultation
               </small>
             </div>
 
@@ -69,12 +69,14 @@ export default function Contact() {
             <div className="mb-4">
               <label className="flex items-center space-x-2">
                 <input type="checkbox" required />
-                <span>I&#39;m not a robot</span>
+                <span>I&apos;m not a robot</span>
               </label>
               <div className="mt-2">
-                <img
+                <Image
                   src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
                   alt="reCAPTCHA"
+                  width={48}
+                  height={48}
                   className="h-6"
                 />
               </div>
