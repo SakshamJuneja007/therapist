@@ -47,7 +47,7 @@ export default function About() {
         {/* Right: Image */}
         <div className="about-image">
           <Image
-            src="/jennifer.jpg"
+            src="/jennifer2.jpg"
             alt="Dr. Jennifer Hahm"
             width={360}
             height={500}
